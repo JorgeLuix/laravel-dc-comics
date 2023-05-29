@@ -1,5 +1,3 @@
-app.blade.php
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -22,15 +20,20 @@ app.blade.php
 
 <body>
     <header>
-
+    @include('partials.header')
 </header>
-<main>
-    <div class="container-fluid">
+<main class="">
+
+    <div class="container">
         @yield('content')
     </div>
+    <div class="">
+
+    </div>
+
 </main>
 <footer>
-    {{-- @include('partials.footer') --}}
+    @include('partials.footer')
 </footer>
 
 </body>

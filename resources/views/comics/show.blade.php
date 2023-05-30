@@ -1,9 +1,11 @@
 @extends('layouts.app')
 
+<title>Details</title>
+
 @section('content')
     <div class="container">
-        <div class="card">
-            <img src="{{ $comic->thumb }}" class="card-img-top w-100" alt="{{ $comic->title }}">
+        <div class="card w-50">
+            <img src="{{ $comic->thumb }}" class="card-img w-100" alt="{{ $comic->title }}">
             <div class="card-body">
                 <h5 class="card-title">{{ $comic->title }}</h5>
                 <p class="card-text">{{ $comic->description }}</p>

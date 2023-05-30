@@ -28,3 +28,14 @@ deleteButtons.forEach((button) => {
         });
     });
 });
+/*******button LoadMore */
+const LoadMoreBtn = document.getElementById('load-more');
+
+const row = document.querySelector('.row');
+
+LoadMoreBtn.addEventListener('click', function() {
+
+    row.classList.add('show-more');
+    LoadMoreBtn.style.display = 'none';
+
+});

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+<title>Editare comic</title>
+
 @section('content')
     <div class="container">
         <div class="card">

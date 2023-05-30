@@ -6,6 +6,8 @@
     <div class="jumbotron w-100">
         <img class="w-100" src="{{ Vite::asset('resources/images/jumbotron.jpg ') }} " alt="">
     </div>
+    <a type="submit" href=" {{ route('home')}} " class="btn btn-danger m-2 btn-shadow text-warning font-weight-bold">
+         Back to Homepage</a>
     <div class="container text-center">
         @if (session()->has('message'))
             <div class="alert alert-success">
@@ -20,15 +22,13 @@
 
                         <div class="cards-body">
                             <h2 class="card-title">{{ $comic->title }}</h2>
-                            {{-- <p class="card-description">{{$comic->description}}</p> --}}
                             <div class="d-flex justify-content-around align-items-center">
-                                {{-- <p class="card-text">{{$comic->price}}</p> --}}
                                 <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary"> Detail</a>
-                                <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Modify</a>
+                                <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-light">Modify</a>
                                 <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="delete-button btn btn-danger ms-3"
+                                    <button type="submit" class="delete-button btn btn-secondary ms-3"
                                         data-item-title="{{ $comic->title }}">Delete</button>
                                 </form>
                             </div>
@@ -37,7 +37,7 @@
                 </div>
             @endforeach
         </div>
-        <a class="text-uppercase btn btn-primary">load more</a>
+        <a id="load-more" class="text-uppercase btn btn-primary">load more</a>
         <a href="{{ route('comics.create') }} " class="text-uppercase btn btn-danger">Add Comic</a>
     </div>
     @include('partials.delete');

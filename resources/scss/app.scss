@@ -11,6 +11,7 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import "~bootstrap/scss/bootstrap";
 
+
 .bg-footer{
     background-color: rgb(78, 77, 77);
 }
@@ -30,9 +31,6 @@ a{
       border-radius: 5px;
 
       .cards-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         padding: 1rem;
         color: white;
       }

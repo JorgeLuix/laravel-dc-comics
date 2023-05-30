@@ -23,8 +23,8 @@
     @include('partials.header')
 </header>
 <main class="bg-black">
-    <div class="jumbotron w-100">
-        <img class="w-100" src="{{ Vite::asset('resources/images/jumbotron.jpg ') }} " alt="">
+    <div class="w-100">
+        @yield('home')
     </div>
     <div class="container p-5">
         @yield('content')

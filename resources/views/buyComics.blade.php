@@ -1,8 +1,8 @@
 {{-- @extends('layout.app')
 
 @section('content') --}}
-<div class="">
-    <div class="container d-flex p-3 justify-content-around align-items-center">
+<div class="container">
+    <div class="d-flex p-3 justify-content-around align-items-center">
         <span><a href="#"><img src="{{ Vite::asset('resources/images/buy-comics-digital-comics.png') }}"> digital comics</a></span>
         <span><a href="#"><img src="{{ Vite::asset('resources/images/buy-comics-merchandise.png') }}" alt=""> dc merchandise</a></span>
         <span><a href="#"> <img src="{{ Vite::asset('resources/images/buy-comics-shop-locator.png') }}" alt=""> subscription</a></span>

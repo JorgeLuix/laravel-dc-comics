@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+<title>Homepage</title>
+
 @section('home')
     <div class="container p-5">
         <h1 class="text-warning">Esploriamo il Mondo dei Fumetti!</h1>
@@ -11,7 +13,7 @@
                 <li>Ogni fumetto è curato con attenzione per garantire qualità e coinvolgimento.</li>
             </ul>
         </section>
-        <a href="{{ route('comics.index') }} "> Vai ai fumetti!</a>
+        <a href="{{ route('comics.index') }} ">Vai ai fumetti! <i class="fa-solid fa-circle-arrow-right"></i></a>
     </div>
 
 @endsection

@@ -11,6 +11,16 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import "~bootstrap/scss/bootstrap";
 
+:root {
+    --colorRed: #FF0052;
+    --colorBlue: #131661;
+    --colorWhite: #FFFFFF;
+    --lightgreen: #00B67A;
+    --colorBlack: #000000;
+    --secondaryBlue: #090E38;
+    --color-cards: #232B5C;
+}
+
 
 .bg-footer{
     background-color: rgb(78, 77, 77);
@@ -23,6 +33,7 @@ li{
 }
 a{
     text-decoration: none;
+    margin: 5px;
 }
 
     .jc-card {
@@ -47,11 +58,12 @@ a{
     }
     .jc-card:hover{
         cursor: pointer;
-        background-color:  #252525;
+        background-color: var(--color-cards);
       }
       .jc-card img{
         width: 100%;
-        border-radius: 8px;
+        max-height: 300px;
+        border-radius: 10px;
         padding-top: 8px;
       }
 

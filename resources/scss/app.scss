@@ -10,3 +10,50 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import "~bootstrap/scss/bootstrap";
+
+.bg-footer{
+    background-color: rgb(78, 77, 77);
+}
+.bg-foot {
+    background-image: url('../images/footer-bg.jpg');
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+    .jc-card {
+      width: 100%;
+      transition: all ease 0.4s;
+      border-radius: 5px;
+
+      .cards-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        color: white;
+      }
+      .card-title {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+      }
+
+    }
+    .jc-card:hover{
+        cursor: pointer;
+        background-color:  #252525;
+      }
+      .jc-card img{
+        width: 100%;
+        border-radius: 8px;
+        padding-top: 8px;
+      }
+

@@ -5,7 +5,7 @@ return [
         "Characters",
         "Comics",
         "Movies",
-        "Tv",
+        "Add Comic",
         "Games",
         "Collectibles",
         "Videos",

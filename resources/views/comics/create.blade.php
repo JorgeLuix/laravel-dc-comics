@@ -36,6 +36,7 @@
                         <input type="text" class="form-control" id="type" name="type" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Create Comic</button>
+                    <a href="{{ route('comics.index') }}" class="btn btn-danger">Back to List</a>
                 </form>
             </div>
         </div>

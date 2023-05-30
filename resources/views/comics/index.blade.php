@@ -10,9 +10,9 @@
 
                     <div class="cards-body">
                         <h2 class="card-title">{{$comic->title}}</h2>
-                        <p class="card-description">{{$comic->description}}</p>
+                        {{-- <p class="card-description">{{$comic->description}}</p> --}}
                         <div class="price-play">
-                        <p class="card-text">{{$comic->price}}</p>
+                        {{-- <p class="card-text">{{$comic->price}}</p> --}}
                         <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
@@ -22,5 +22,6 @@
             @endforeach
         </div>
         <button class="text-uppercase btn btn-primary">load more</button>
+        <a href="{{ route('comics.create' )}} " class="text-uppercase btn btn-danger">Add Comic</a>
     </div>
 @endsection
